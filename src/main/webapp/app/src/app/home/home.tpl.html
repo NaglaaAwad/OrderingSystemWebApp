@@ -1,0 +1,32 @@
+<div class="jumbotron">
+  <div class="large-4 large-centered columns">
+    <div class="signup-box">
+
+      <h1>Showpiece Online Store</h1>
+
+      <p class="lead">
+        We Have Everything you need. Just navigate through our items and enjoy your time.
+      </p>
+
+      <div class="btn-group" ng-hide="isLogedIn()">
+        <a ui-sref="login()" class="btn btn-large btn-default">
+          <i class="fa fa-sign-in"></i>
+          Login
+        </a>
+        <a ui-sref="register" class="btn btn-large btn-success">
+          <i class="fa fa-registered"></i>
+          Register
+        </a>
+      </div>
+      <div class="btn-group" ng-show="isLogedIn()">
+        <a ng-click="logout()" class="btn btn-large btn-default">
+          <i class="fa fa-sign-out"></i>
+          Logout
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+

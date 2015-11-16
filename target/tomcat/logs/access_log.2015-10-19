@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [19/Oct/2015:22:37:54 -0400] "GET /OrderingSystemWebApp HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [19/Oct/2015:22:37:55 -0400] "GET /OrderingSystemWebApp/ HTTP/1.1" 500 12109 http-bio-8080-exec-3 1859
+0:0:0:0:0:0:0:1 - - [19/Oct/2015:22:38:04 -0400] "GET /OrderingSystemWebApp/login HTTP/1.1" 500 12109 http-bio-8080-exec-2 503
+0:0:0:0:0:0:0:1 - - [19/Oct/2015:22:38:33 -0400] "GET /OrderingSystemWebApp/register HTTP/1.1" 500 12109 http-bio-8080-exec-4 448
+0:0:0:0:0:0:0:1 - - [19/Oct/2015:22:39:15 -0400] "GET /OrderingSystemWebApp/app/build/index.html HTTP/1.1" 500 12109 http-bio-8080-exec-5 462
+0:0:0:0:0:0:0:1 - - [19/Oct/2015:22:39:20 -0400] "GET /OrderingSystemWebApp/app/build/index.html HTTP/1.1" 500 12109 http-bio-8080-exec-6 231

@@ -1,0 +1,40 @@
+<div class="jumbotron">
+	<div class="large-4 large-centered columns">
+		<div class="login-box">
+			<div class="row">
+				<div class="large-12 columns">
+					<h2 class="text-center">
+						Welcome To Our Store
+					</h2>
+					<p>Please log in or Register</p>
+					<form ng-submit="login()">
+						<div class="row">
+							<div class="large-12 columns">
+								<span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+								<input ng-model="email" type="email" name="email" placeholder="Email Address" required />
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-12 columns">
+								<span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+								<input ng-model="password" type="password" name="password" placeholder="Password" required />
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-4 columns" ng-hide="isLogedIn()">
+								<input type="submit" class="button expand" value="Log In"/>
+							</div>
+							<div class="large-4 columns">
+								<a href="/signup" class="button expand">Register</a>
+							</div>
+							<div class="large-4 columns" ng-show="isLogedIn()">
+								<input type="submit" class="button expand" value="Logout"/>
+							</div>
+						</div>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

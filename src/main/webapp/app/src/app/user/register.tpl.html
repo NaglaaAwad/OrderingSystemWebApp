@@ -1,0 +1,47 @@
+<div class="large-4 large-centered columns">
+    <div class="signup-box">
+        <div class="row">
+            <div class="large-12 columns">
+                <h2 class="text-center">
+                    UserAuth
+                </h2>
+                <p>Please fill in the fields below to signup</p>
+                <form ng-submit="register()">
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <input ng-model="username" ng-maxlength="40" type="text" name="username" placeholder="User Name" required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <input ng-model="firstname" ng-maxlength="40" type="text" name="firstname" placeholder="First Name" required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <input ng-model="lastname" ng-maxlength="40" type="text" name="lastname" placeholder="Last Name" required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <input type="email" placeholder="Email Address" name="email" ng-model="email" required >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <input ng-model="password" ng-maxlength="20" type="password" name="password" placeholder="Password" required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-4 columns">
+                            <input type="submit" class="button expand" value="Register"/>
+                        </div>
+                        <div class="large-4 columns">
+                            <a class="button expand">Log In</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
