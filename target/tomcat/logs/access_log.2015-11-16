@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [16/Nov/2015:17:36:08 -0800] "GET / HTTP/1.1" 404 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [16/Nov/2015:17:36:08 -0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [16/Nov/2015:17:36:19 -0800] "GET / HTTP/1.1" 404 - http-bio-8080-exec-4 0
+0:0:0:0:0:0:0:1 - - [16/Nov/2015:17:36:39 -0800] "GET /OrderingSystemWebApp HTTP/1.1" 302 - http-bio-8080-exec-8 0
+0:0:0:0:0:0:0:1 - - [16/Nov/2015:17:36:40 -0800] "GET /OrderingSystemWebApp/ HTTP/1.1" 500 12070 http-bio-8080-exec-8 732

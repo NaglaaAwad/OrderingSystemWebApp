@@ -1,11 +1,8 @@
 package tutorial.rest.resources.asm;
 
 import org.springframework.hateoas.mvc.ResourceAssemblerSupport;
-import tutorial.core.services.util.BlogList;
 import tutorial.core.services.util.OrderList;
-import tutorial.rest.mvc.BlogController;
 import tutorial.rest.mvc.OrderController;
-import tutorial.rest.resources.BlogListResource;
 import tutorial.rest.resources.OrderListResource;
 
 /**

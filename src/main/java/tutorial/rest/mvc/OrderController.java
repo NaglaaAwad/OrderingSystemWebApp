@@ -9,16 +9,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import tutorial.core.models.entities.Blog;
-import tutorial.core.models.entities.BlogEntry;
 import tutorial.core.models.entities.Order;
 import tutorial.core.models.entities.OrderDetail;
-import tutorial.core.services.BlogService;
 import tutorial.core.services.OrderService;
-import tutorial.core.services.exceptions.BlogNotFoundException;
 import tutorial.core.services.exceptions.OrderNotFoundException;
-import tutorial.core.services.util.BlogEntryList;
-import tutorial.core.services.util.BlogList;
+import tutorial.core.services.exceptions.UserDoesNotExistException;
 import tutorial.core.services.util.OrderDetailList;
 import tutorial.core.services.util.OrderList;
 import tutorial.rest.exceptions.NotFoundException;
@@ -74,7 +69,7 @@ public class OrderController {
             HttpHeaders headers = new HttpHeaders();
             headers.setLocation(URI.create(createdResource.getLink("self").getHref()));
             return new ResponseEntity<OrderDetailResource>(createdResource, headers, HttpStatus.CREATED);
-        } catch (BlogNotFoundException e) {
+        } catch (UserDoesNotExistException e) {
             throw new NotFoundException(e);
         }
     }

@@ -1,7 +1,6 @@
 package tutorial.core.repositories.jpa;
 
 import org.springframework.stereotype.Repository;
-import tutorial.core.models.entities.BlogEntry;
 import tutorial.core.models.entities.OrderDetail;
 import tutorial.core.repositories.OrderDetailRepo;
 

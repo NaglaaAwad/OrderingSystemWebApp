@@ -1,11 +1,8 @@
 package tutorial.rest.resources.asm;
 
 import org.springframework.hateoas.mvc.ResourceAssemblerSupport;
-import tutorial.core.models.entities.Account;
 import tutorial.core.models.entities.User;
-import tutorial.rest.mvc.AccountController;
 import tutorial.rest.mvc.UserController;
-import tutorial.rest.resources.AccountResource;
 import tutorial.rest.resources.UserResource;
 
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;

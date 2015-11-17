@@ -8,13 +8,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import tutorial.core.models.entities.BlogEntry;
 import tutorial.core.models.entities.OrderDetail;
-import tutorial.core.services.BlogEntryService;
 import tutorial.core.services.OrderDetailService;
-import tutorial.rest.resources.BlogEntryResource;
 import tutorial.rest.resources.OrderDetailResource;
-import tutorial.rest.resources.asm.BlogEntryResourceAsm;
 import tutorial.rest.resources.asm.OrderDetailResourceAsm;
 
 /**

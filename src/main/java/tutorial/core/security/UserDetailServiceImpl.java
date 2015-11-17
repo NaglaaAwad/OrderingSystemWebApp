@@ -5,9 +5,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
-import tutorial.core.models.entities.Account;
 import tutorial.core.models.entities.User;
-import tutorial.core.services.AccountService;
 import tutorial.core.services.UserService;
 
 /**

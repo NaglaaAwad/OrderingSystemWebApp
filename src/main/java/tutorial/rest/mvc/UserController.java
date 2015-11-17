@@ -10,15 +10,10 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import tutorial.core.models.entities.Account;
-import tutorial.core.models.entities.Blog;
 import tutorial.core.models.entities.Order;
 import tutorial.core.models.entities.User;
-import tutorial.core.services.AccountService;
 import tutorial.core.services.UserService;
 import tutorial.core.services.exceptions.*;
-import tutorial.core.services.util.AccountList;
-import tutorial.core.services.util.BlogList;
 import tutorial.core.services.util.OrderList;
 import tutorial.core.services.util.UserList;
 import tutorial.rest.exceptions.ConflictException;
@@ -114,10 +109,10 @@ public class UserController {
                     HttpHeaders headers = new HttpHeaders();
                     headers.setLocation(URI.create(createdOrderRes.getLink("self").getHref()));
                     return new ResponseEntity<OrderResource>(createdOrderRes, headers, HttpStatus.CREATED);
-                } catch(AccountDoesNotExistException exception)
+                } catch(UserDoesNotExistException exception)
                 {
                     throw new NotFoundException(exception);
-                } catch(BlogExistsException exception)
+                } catch(OrderNotFoundException exception)
                 {
                     throw new ConflictException(exception);
                 }

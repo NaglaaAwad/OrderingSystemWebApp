@@ -2,7 +2,6 @@ package tutorial.core.security;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import tutorial.core.models.entities.Account;
 import tutorial.core.models.entities.User;
 
 import java.util.ArrayList;

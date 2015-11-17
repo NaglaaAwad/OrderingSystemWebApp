@@ -1,7 +1,6 @@
 package tutorial.core.repositories.jpa;
 
 import org.springframework.stereotype.Repository;
-import tutorial.core.models.entities.Account;
 import tutorial.core.models.entities.User;
 import tutorial.core.repositories.UserRepo;
 

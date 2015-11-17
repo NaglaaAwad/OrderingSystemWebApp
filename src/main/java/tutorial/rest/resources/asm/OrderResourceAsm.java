@@ -1,13 +1,9 @@
 package tutorial.rest.resources.asm;
 
 import org.springframework.hateoas.mvc.ResourceAssemblerSupport;
-import tutorial.core.models.entities.Blog;
 import tutorial.core.models.entities.Order;
-import tutorial.rest.mvc.AccountController;
-import tutorial.rest.mvc.BlogController;
 import tutorial.rest.mvc.OrderController;
 import tutorial.rest.mvc.UserController;
-import tutorial.rest.resources.BlogResource;
 import tutorial.rest.resources.OrderResource;
 
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
